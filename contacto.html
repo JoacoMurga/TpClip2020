@@ -6,4 +6,85 @@
     <meta name="viewport" content="width=h, initial-scale=1.0">
     <title> Murga y Asociados </title>
     <link rel="stylesheet" href="styles.css">
+    <link rel="shortcut icon" href="/img/ABOGADO.png">
+    <link rel="stylesheet" href="normalize.css">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
+
 </head>
+
+
+<body>
+
+
+    <header class="site-header ">
+        <div class="contenedor contenido-header">
+            <div class="barra">
+                <a href="/">
+
+                    <img src="/img/logo.png" alt="Murga y Asociados" style="width: 48rem;">
+                </a>
+                <nav class="navegacion">
+                    <a href="index.html">Inicio</a>
+                    <a href="nosotros.html">Nosotros</a>
+
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <h1 class="fw-300 centrar">Contacto</h1>
+
+    <main class="contenedor seccion">
+        <img src="/img/tarjeta MURGA Y ASOCIADOS_2.png" alt="">
+        <h2 class="fw-300 centrar">Llena el formulario de Contacto</h2>
+
+        <form action="">
+            <fieldset>
+                <legend>Información Personal</legend>
+
+                <label for="Nombre">Nombre:</label>
+                <input type="text" id="Nombre" placeholder="Tu nombre completo" required>
+
+                <label for="correo">E-mail:</label>
+                <input type="email" id="correo" placeholder="Tu E-mail" required>
+
+                <label for="Telefono">Telefono:</label>
+                <input type="tel" id="Telefono" placeholder="Tu número de Telefono" required>
+            </fieldset>
+
+            <fieldset>
+                <legend>¿Que servicio Necesitas?
+                </legend>
+                <label for="opciones"> Servicios:</label>
+                <select id="opciones" required>
+                    <option value="" disabled selected>-- Selecciona una opción</option>
+                    <option value="">ART</option>
+                    <option value="">Defensas Penales</option>
+
+                </select>
+                <label for="Mensaje">Informacion Extra:</label>
+                <textarea id="Mensaje" cols="30" rows="10"></textarea>
+            </fieldset>
+            <p class="fw-300">Horario de atencion y contacto: 9:00 - 14:00</p>
+            <input type="submit" value="Enviar" class="boton">
+
+
+
+
+        </form>
+
+
+    </main>
+
+    <footer class="footer seccion">
+        <div class="contenedor contenido-footer">
+            <nav class="navegacion">
+                <a href="Inicio.html">Inicio</a>
+                <a href="contacto.html">Contacto</a>
+            </nav>
+            <p class="copy">Todos los Derechos Reservados 2020 &copy; </p>
+        </div>
+    </footer>
+
+
+</body>

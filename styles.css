@@ -4,6 +4,12 @@ html {
 
 body {
     font-family: 'Lato', sans-serif;
+    font-size: 2rem;
+}
+
+a {
+    text-decoration: none;
+    color: black;
 }
 
 
@@ -27,6 +33,7 @@ h1 {
 
 .site-header {
     background-color: #333333;
+    padding: 1rem 0 3rem 0;
 }
 
 .site-header.inicio {
@@ -66,7 +73,7 @@ h1 {
     color: white;
     margin-right: 2rem;
     font-weight: 300;
-    font-size: 1.2rem;
+    font-size: 1.6rem;
 }
 
 .navegacion a:hover {
@@ -83,12 +90,144 @@ h1 {
 }
 
 
+/** UTILIDADES **/
+
+.centrar {
+    text-align: center;
+}
+
+.fw-400 {
+    font-weight: 400;
+}
+
+.fw-300 {
+    font-weight: 300;
+}
+
+
 /** MAIN **/
 
 .contenedor-producto {
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
+    padding: 3rem;
 }
 
-.producto {}
+.producto {
+    flex-shrink: 0;
+    flex-basis: calc(50% - 2rem);
+    margin-bottom: 50px;
+}
+
+.producto {
+    border: 1px solid #333333;
+    background: #f5f5f5;
+    margin-bottom: 2rem;
+    transition: 0.5s;
+    cursor: pointer;
+}
+
+.producto:hover {
+    border: 3px solid rgb(255, 225, 94);
+    background: #f5f5f5;
+    margin-bottom: 2rem;
+    transition: 0.5s ease;
+    cursor: pointer;
+}
+
+.producto h3 {
+    font-size: 1.8rem;
+    margin: 1rem 0;
+}
+
+.info {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-column-gap: 2rem;
+    margin-bottom: 10rem;
+}
+
+#m-0 {
+    margin: 10px;
+}
+
+.boton:hover {
+    color: #333333;
+    font-weight: 900;
+}
+
+.info-mas {
+    flex-shrink: 0;
+    flex-basis: calc(50% - 2rem);
+}
+
+.imagen {
+    flex-basis: 40%;
+    float: left;
+}
+
+
+/** FOOTER **/
+
+.footer {
+    background-color: #333333;
+    margin-bottom: 0;
+}
+
+.contenido-footer {
+    padding: 2rem 0;
+    display: flex;
+    justify-content: space-between;
+}
+
+.copy {
+    margin-bottom: 0;
+    color: white;
+}
+
+.borde {
+    border: 1px solid black;
+    margin: 0 auto 16px;
+    width: 1000px;
+}
+
+
+/*NOSOTROS*/
+
+.t-titulo {
+    margin-top: 30px;
+    margin-bottom: 40px;
+}
+
+.tabla {
+    margin-top: 10px;
+    border: 1px solid black;
+    border-collapse: collapse;
+    background-color: #f5f5f5;
+}
+
+
+/*CONTACTO*/
+
+legend {
+    font-size: 2.5rem;
+    color: #333333;
+}
+
+label {
+    text-transform: uppercase;
+    display: block;
+}
+
+input:not([type="submit"]),
+textarea,
+select {
+    padding: 1rem;
+    display: block;
+    width: 97%;
+    background-color: #e1e1e1;
+    margin-bottom: 2rem;
+    border: none;
+    border-radius: 1rem;
+}
