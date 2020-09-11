@@ -1,6 +1,6 @@
 var contador = 0;
 var intentos = 4;
-var respuestaCorrecta = ("ABOGACIA");
+var respuestaCorrecta = ("ABOGACIA", "ABOGACÍA");
 var respuesta = document.getElementById("respuesta");
 var alerta = document.getElementById("alerta");
 var intentosCartel = document.getElementById("intentosCartel");
@@ -12,6 +12,9 @@ function adivi() {
     event.preventDefault()
     if (respuestaUser == respuesta.value.toUpperCase()) {
         alerta.innerHTML = '<div class="container-sm alert alert-success" id="alerta"  role="alerta">La respuesta es CORRECTA! FELICITACIONES!</div>'
+
+        pista.remove()
+        intentosCartel.remove()
         redireccion.innerHTML = '<p class="container-sm fw-400"> Seras redireccionado en 5 segundos, gracias por jugar! </p>'
         setTimeout('location.href = "index.html"', 5000)
     } else {
