@@ -231,3 +231,25 @@ select {
     border: none;
     border-radius: 1rem;
 }
+
+@media (max-width: 780px) {
+    .barra {
+        display: block;
+    }
+    h1 {
+        font-size: 20px;
+    }
+    .navegacion {
+        display: block;
+    }
+}
+
+@media (min-width: 768px) {
+    .navegacion a {
+        display: inline;
+        margin-right: 2rem;
+    }
+    .navegacion a:last-of-type {
+        margin-right: 0;
+    }
+}

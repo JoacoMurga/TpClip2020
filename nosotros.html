@@ -3,58 +3,62 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=h, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title> Murga y Asociados </title>
     <link rel="shortcut icon" href="/img/ABOGADO.png">
-    <link rel="stylesheet" href="styles.css">
-    <link rel="stylesheet" href="styles.css">
+
     <link rel="stylesheet" href="normalize.css">
     <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <link rel="stylesheet" href="styles.css">
+
 </head>
 
 <body>
 
 
-    <header class="site-header ">
-        <div class="contenedor contenido-header">
-            <div class="barra">
+    <header class="site-header sticky-top ">
+        <div class="container-sm contenido-header ">
+            <div class="barra container-sm">
                 <a href="/">
-
                     <img src="/img/logo.png" alt="Murga y Asociados" style="width: 48rem;">
                 </a>
-                <nav class="navegacion">
+                <nav class="navegacion text-center">
                     <a href="index.html">Inicio</a>
                     <a href="contacto.html">Contacto</a>
+                    <a href="adivinanza.html">Juego</a>
                     <a target="_blank" href="https://www.instagram.com/murgayasociados/"> <img style="width: 20px;" src="/img/PikPng.com_instagram-logo-png_1124492.png" alt="Logo Instagram"></a>
                     <a target="_blank" href="https://www.youtube.com/watch?v=dQw4w9WgXcQ&ab_channel=RickAstleyVEVO"> <img style="width: 20px;" src="/img/PikPng.com_logo-whatsapp-png_494277.png" alt="Logo Whatsapp"></a>
                 </nav>
             </div>
         </div>
     </header>
-    <div class="contenedor">
-        <div class="fw-400 info " id="m-0">
+    <div class="container-sm">
+        <div class="fw-400  " id="m-0">
 
-            <div class="info-mas">
+            <div class="info-mas col-sm">
                 <h1 class="centrar fw-300">Conoce mas sobre nosotros</h1>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias, vero vitae. Sequi, totam quidem iste odio sunt, voluptas maxime inventore natus officiis explicabo nesciunt non itaque quod, labore fuga deleniti! Lorem ipsum dolor sit amet
                     consectetur, adipisicing elit. In est ea soluta commodi minima, nisi molestiae sint laborum magnam, expedita ex accusantium nostrum inventoreadipisci deleniti, quidem fugit quaerat recusandae.
                 </p>
 
             </div>
-            <div>
-                <table border="tabla" class="tabla">
-                    <caption class="t-titulo">HORARIO DE ATENCION</caption>
-                    <tr>
-                        <th>Dias</th>
-                        <th>Lunes</th>
-                        <th>Martes</th>
-                        <th>Miercoles</th>
-                        <th>Jueves</th>
-                        <th>Viernes</th>
-                        <th>Sabado</th>
-                        <th>Domingo</th>
-                    </tr>
+            <div class="table-responsive-sm pb-5">
+                <h3 class="text-center text-dark ">Horario de atencion</h3>
+                <table class="table table-bordered table-dark">
 
+                    <thead clas>
+                        <tr>
+                            <th>Dias</th>
+                            <th>Lunes</th>
+                            <th>Martes</th>
+                            <th>Miercoles</th>
+                            <th>Jueves</th>
+                            <th>Viernes</th>
+                            <th>Sabado</th>
+                            <th>Domingo</th>
+                        </tr>
+                    </thead>
 
                     <tr>
                         <th>Apertura</th>
@@ -78,11 +82,13 @@
         </div>
     </div>
 
-    <footer class="footer seccion">
-        <div class="contenedor contenido-footer">
-            <nav class="navegacion">
+    <footer class="footer ">
+        <div class=" container-sm contenido-footer">
+            <nav class="navegacion container-sm">
                 <a href="index.html">Inicio</a>
                 <a href="contacto.html">Contacto</a>
+                <a href="adivinanza.html">Juego</a>
+
                 <a target="_blank" href="https://www.instagram.com/murgayasociados/"> <img style="width: 20px;" src="/img/PikPng.com_instagram-logo-png_1124492.png" alt="Logo Instagram"></a>
                 <a target="_blank" href="https://www.youtube.com/watch?v=dQw4w9WgXcQ&ab_channel=RickAstleyVEVO"> <img style="width: 20px;" src="/img/PikPng.com_logo-whatsapp-png_494277.png" alt="Logo Whatsapp"></a>
             </nav>
@@ -90,5 +96,8 @@
         </div>
     </footer>
 
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
 
 </body>
